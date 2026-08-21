@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* -- Sakura / Navy ERP palette -- */
+  --color-ink-navy: #0e1b33;
+  --color-deep-navy: #16233f;
+  --color-navy-line: #26365c;
+  --color-paper: #faf9f6;
+  --color-panel: #ffffff;
+  --color-slate: #1e2430;
+  --color-slate-soft: #5b6472;
+  --color-sakura-blush: #f3c6d3;
+  --color-sakura-rose: #c85a7c;
+  --color-sakura-rose-deep: #a8456a;
+  --color-conf-good: #3c8b6d;
+  --color-conf-warn: #c98a2c;
+  --color-conf-bad: #c24949;
+
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  --radius-card: 0.625rem;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    color: var(--color-slate);
+    background: var(--color-paper);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  .font-tabular {
+    font-family: var(--font-data);
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sakura-rose);
+    outline-offset: 2px;
+  }
+}

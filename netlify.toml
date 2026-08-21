@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# React Router uses client-side routing — without this, refreshing on any
+# route other than "/" (e.g. /queue, /documents/abc123) returns a 404 from
+# Netlify's static file server. This rule sends every path to index.html
+# and lets React Router take over from there.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
