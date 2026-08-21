@@ -38,3 +38,4 @@ or the button will silently fail to issue a token.
 - Inline field editing on the review page (the backend's `documents.edit` action is ready; the UI doesn't call it yet)
 - Settings page is still static placeholder text — the confidence threshold and backend URL shown there aren't real, nothing is persisted or read from anywhere
 - No auth restriction beyond "is a real Google account" — anyone who finds the URL and signs in gets a session; add an email allow-list/domain check in the backend's Auth.gs before treating this as production-secure
+"# SIDP" 
